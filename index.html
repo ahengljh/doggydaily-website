@@ -197,9 +197,75 @@
             font-size: 60px;
         }
 
+        /* For Everyone Section */
+        .for-everyone {
+            padding: 120px 40px;
+            background: #FFFFFF;
+        }
+
+        .for-everyone-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .for-everyone h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 600;
+            margin-bottom: 48px;
+            letter-spacing: -1px;
+        }
+
+        .user-types {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 60px;
+        }
+
+        .user-type {
+            padding: 40px;
+            background: var(--secondary);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .user-type:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .user-type-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .user-type h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .user-type p {
+            color: var(--text-light);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .connection-text {
+            font-size: 20px;
+            color: var(--text-light);
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+            font-style: italic;
+        }
+
         /* Features Section */
         .features {
             padding: 120px 40px;
+            background: var(--secondary);
         }
 
         .features-container {
@@ -238,7 +304,7 @@
             width: 80px;
             height: 80px;
             margin: 0 auto 24px;
-            background: var(--secondary);
+            background: white;
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -262,7 +328,7 @@
         /* Timeline Preview */
         .timeline-preview {
             padding: 120px 40px;
-            background: var(--secondary);
+            background: white;
             overflow: hidden;
         }
 
@@ -302,7 +368,7 @@
         .timeline-item {
             flex: 0 0 200px;
             height: 280px;
-            background: white;
+            background: var(--secondary);
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             padding: 10px;
@@ -317,7 +383,7 @@
         .timeline-photo {
             width: 100%;
             height: 200px;
-            background: linear-gradient(135deg, #E0E0E0 0%, #F0F0F0 100%);
+            background: white;
             border-radius: 12px;
             margin-bottom: 12px;
             display: flex;
@@ -454,6 +520,11 @@
                 transform: scale(0.8);
             }
 
+            .user-types {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
             .features-grid {
                 gap: 40px;
             }
@@ -506,6 +577,28 @@
                     <div class="screen-content">
                         <div>🐕</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Everyone Section -->
+    <section class="for-everyone">
+        <div class="for-everyone-container">
+            <h2>A Daily Ritual for Every Dog Lover</h2>
+            <p class="connection-text">
+                "When your eyes meet theirs, capture that fleeting connection. Still, just one precious moment per day."
+            </p>
+            <div class="user-types">
+                <div class="user-type">
+                    <div class="user-type-icon">🏠</div>
+                    <h3>For Dog Owners</h3>
+                    <p>Capture the daily portrait of your beloved companion. Watch them grow, change, and share countless moments together.</p>
+                </div>
+                <div class="user-type">
+                    <div class="user-type-icon">🌍</div>
+                    <h3>For Dog Enthusiasts</h3>
+                    <p>Document the dogs you encounter on your walks, at school, at friends' homes, or anywhere life takes you. Every meeting tells a story.</p>
                 </div>
             </div>
         </div>
